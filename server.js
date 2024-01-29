@@ -6,6 +6,8 @@ const db = require("./database/db.js")
 app.use(express.json())
 
 app.use("/api/auth",route);
+
+
 db().then(()=>{
     app.listen(4000,()=>{
         console.log("server is running...")
