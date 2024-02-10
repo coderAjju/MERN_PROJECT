@@ -7,6 +7,12 @@ app.use(express.json())
 
 app.use("/api/auth",route);
 
+app.get("/",(req,res)=>{
+    res.send("hello this is home page")
+})
+app.get("/home",(req,res)=>{
+    res.send("hello this is home page")
+})
 
 db().then(()=>{
     app.listen(4000,()=>{
