@@ -10,7 +10,7 @@ app.use("/api/auth",route);
 app.get("/",(req,res)=>{
     res.send("hello this is home page")
 })
-app.get("/home",(req,res)=>{
+app.get("/hello",(req,res)=>{
     res.send("hello this is home page")
 })
 
